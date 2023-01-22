@@ -341,3 +341,29 @@ footer li a {
     border-radius: 0.7em;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .stats {
+    gap: 0;
+  }
+  .btn-mobile {
+    display: block;
+    margin: 2em auto;
+    max-width: 90vw;
+  }
+  .stats.btn {
+    display: none;
+  }
+  .stats > div {
+    width: initial;
+  }
+  .about-text {
+    position: relative;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+}
