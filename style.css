@@ -287,3 +287,57 @@ footer li a {
   font-size: 00.9em;
   text-decoration: underline;
 }
+
+/* classes that will be dynamically added in js later on */
+.roof-2 {
+  animation: changeImg 0.5s forwards;
+}
+
+/* Disable scroll on body */
+.sidebar-open-body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+/* Arrow Animation */
+@keyframes arrow {
+  40 % {
+    transform: translateY(0px);
+  }
+  45 % {
+    transform: translateY(8px);
+  }
+  55 % {
+    transform: translateY(0px);
+  }
+  60 % {
+    transform: translateY(8px);
+  }
+  65 % {
+    transform: translateY(0px);
+  }
+  100 % {
+    transform: translateY(0px);
+  }
+}
+
+/* Roof Image Change Animation */
+@keyframes changeImg {
+  100% {
+    /* background:url(assets/top_2.jpg) */
+    background: url(Tesla/roadster-\ back.webp) no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar ul {
+    display: none;
+  }
+  .menu-btn-mobile {
+    display: block;
+    cursor: pointer;
+    background: #e5e8ea;
+    padding: 0.4em 1em;
+    border-radius: 0.7em;
+  }
+}
