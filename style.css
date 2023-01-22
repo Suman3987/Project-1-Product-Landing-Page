@@ -248,3 +248,42 @@ header {
   left: 2em;
   bottom: 4em;
 }
+.interior h2,
+.roof h2 {
+  margin-bottom: 0.5em;
+}
+
+iframe-video {
+  max-width: 1000px;
+  padding: 4em 2em;
+  margin: o auto;
+  text-align: center;
+}
+.action {
+  flex-direction: column;
+}
+.line {
+  display: block;
+  background: #555;
+  width: 1px;
+  height: 8em;
+  margin: 2em 0;
+}
+
+.action .btn,
+.action p {
+  margin: 0.5em 0;
+}
+footer {
+  text-align: center;
+}
+footer li {
+  display: inline-block;
+  margin: 0.7em;
+}
+
+footer li a {
+  color: #fff;
+  font-size: 00.9em;
+  text-decoration: underline;
+}
