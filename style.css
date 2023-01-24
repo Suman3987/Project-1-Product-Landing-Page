@@ -6,7 +6,7 @@ body {
   color: #fff;
   font-family: "Open sans", sans-serif;
   background: #000;
-  overflow: hidden;
+  overflow: auto;
   min-height: 160vh;
 }
 * {
@@ -30,6 +30,8 @@ header {
   background: url(Tesla/car2.jpeg) no-repeat center;
   background-size: cover;
 }
+
+/* set flex layouts */
 .navbar,
 .header-body,
 .stats {
@@ -176,8 +178,8 @@ header {
 
 #video video {
   width: 100%;
-  height: 20vw;
-  max-width: 1200px;
+  height: 100%;
+  /* max-width: 1200px; */
 }
 
 .gauge img {
@@ -230,8 +232,8 @@ header {
 }
 .interior {
   padding: 0 2em 4em 2em;
-  width: 90%;
-  max-width: 1100px;
+  width: 100%;
+  /* max-width: 1100px; */
   margin: 0 auto;
 }
 
@@ -254,7 +256,8 @@ header {
 }
 
 iframe-video {
-  max-width: 1000px;
+  width: 100%;
+  height: 100%;
   padding: 4em 2em;
   margin: o auto;
   text-align: center;
@@ -299,7 +302,7 @@ footer li a {
   overflow: hidden;
 }
 /* Arrow Animation */
-@keyframes arrow {
+/* @keyframes arrow {
   40 % {
     transform: translateY(0px);
   }
@@ -317,8 +320,8 @@ footer li a {
   }
   100 % {
     transform: translateY(0px);
-  }
-}
+  } */
+/* } */
 
 /* Roof Image Change Animation */
 @keyframes changeImg {
