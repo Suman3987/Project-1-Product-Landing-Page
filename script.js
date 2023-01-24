@@ -17,7 +17,7 @@ menuBtnMobile.addEventListener("click", sidebarOpen);
 // Open sidebar function
 function sidebarOpen() {
   sidebar.style.right = "0";
-  console.log("suman");
+
   // show backdrop
   backdrop.style.display = "block";
   // Show backdrop through a smooth transition
