@@ -32,6 +32,7 @@ function sidebarOpen() {
 closeBtn.addEventListener("click", () => {
   // Change sidebar position
   sidebar.style.right = "-20em";
+  // sidebar.style.display = "hidden";
   // Hide backdrop with a smooth transition
   backdrop.style.opacity = "0";
   // Hide backdrop after the transition is done
@@ -45,11 +46,11 @@ closeBtn.addEventListener("click", () => {
 // Custome scroll event(Changing the image)
 // Get elements from the DOM
 
-const text = document.querySelector(".roof-text");
-const roofImg = document.querySelector(".banner-img");
+// const text = document.querySelector(".roof-text");
+// const roofImg = document.querySelector(".banner-img");
 
 // Add a scroll event to the document
-window.addEventListener("sccroll", () => {
+window.addEventListener("scroll", () => {
   // when the text element is animated
   if (text.classList.contains("aos-animate")) {
     // Show the second roof image
