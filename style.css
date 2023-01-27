@@ -6,7 +6,8 @@ body {
   color: #fff;
   font-family: "Open sans", sans-serif;
   background: #000;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   min-height: 160vh;
 }
 * {
@@ -94,7 +95,6 @@ header {
   overflow: scroll;
   box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.5);
   z-index: 3;
-
   transition: 0.4s ease-in-out;
 }
 
@@ -116,7 +116,6 @@ header {
   z-index: 1;
   opacity: 0;
   display: none;
-
   transition: 0.3s;
 }
 
@@ -261,10 +260,13 @@ header {
 .iframe-video {
   width: 100%;
   height: 100%;
-  padding: 4em 2em;
-  margin: 0 auto;
+  /* max-width: 1000px; */
+  padding: 2em 2em;
   text-align: center;
 }
+/* .detail {
+  margin: 0 auto;
+} */
 .action {
   flex-direction: column;
 }
